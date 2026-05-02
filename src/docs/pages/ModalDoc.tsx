@@ -39,7 +39,7 @@ export function ModalDoc() {
         </Preview>
         <CodeBlock
           code={`import { useState } from 'react'
-import { Modal, Button } from 'brutalistic'
+import { Modal, Button } from '@k10_here/brutalistic'
 
 export default function App() {
   const [open, setOpen] = useState(false)

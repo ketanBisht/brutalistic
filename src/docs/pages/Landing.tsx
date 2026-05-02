@@ -41,7 +41,7 @@ export function Landing() {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('npm install brutalistic')
+    navigator.clipboard.writeText('npm install @k10_here/brutalistic')
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
@@ -79,7 +79,7 @@ export function Landing() {
             onClick={handleCopy}
             className="font-mono text-sm bg-nb-black text-nb-yellow px-4 py-2 border-[2.5px] border-nb-black shadow-brutal-sm cursor-pointer hover:bg-gray-900 active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all flex items-center gap-2 mt-4"
           >
-            npm install brutalistic
+            npm install @k10_here/brutalistic
             {copied ? <Check size={16} /> : <Copy size={16} />}
           </button>
         </div>

@@ -33,7 +33,7 @@ export function AccordionDoc() {
           </div>
         </Preview>
         <CodeBlock
-          code={`import { Accordion } from 'brutalistic'
+          code={`import { Accordion } from '@k10_here/brutalistic'
 
 export default function App() {
   const items = [

@@ -25,7 +25,7 @@ export function InputDoc() {
           </div>
         </Preview>
         <CodeBlock
-          code={`import { Input } from 'brutalistic'
+          code={`import { Input } from '@k10_here/brutalistic'
 
 export default function App() {
   return (
@@ -75,7 +75,7 @@ export default function App() {
           </div>
         </Preview>
         <CodeBlock
-          code={`import { Textarea } from 'brutalistic'
+          code={`import { Textarea } from '@k10_here/brutalistic'
 
 export default function App() {
   return (

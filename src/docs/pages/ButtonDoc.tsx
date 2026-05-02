@@ -26,7 +26,7 @@ export function ButtonDoc() {
           </div>
         </Preview>
         <CodeBlock
-          code={`import { Button } from 'brutalistic'
+          code={`import { Button } from '@k10_here/brutalistic'
 
 export default function App() {
   return (

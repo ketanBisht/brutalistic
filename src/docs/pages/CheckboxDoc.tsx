@@ -30,7 +30,7 @@ export function CheckboxDoc() {
         </Preview>
         <CodeBlock
           code={`import { useState } from 'react'
-import { Checkbox } from 'brutalistic'
+import { Checkbox } from '@k10_here/brutalistic'
 
 export default function App() {
   const [checked, setChecked] = useState(false)

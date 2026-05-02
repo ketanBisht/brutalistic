@@ -21,7 +21,7 @@ export function AvatarDoc() {
           </div>
         </Preview>
         <CodeBlock
-          code={`import { Avatar } from 'brutalistic'
+          code={`import { Avatar } from '@k10_here/brutalistic'
 
 export default function App() {
   return (

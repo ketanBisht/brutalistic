@@ -26,7 +26,7 @@ export function AlertDoc() {
           </div>
         </Preview>
         <CodeBlock
-          code={`import { Alert, AlertTitle, AlertDescription } from 'brutalistic'
+          code={`import { Alert, AlertTitle, AlertDescription } from '@k10_here/brutalistic'
 import { Terminal } from 'lucide-react'
 
 export default function App() {

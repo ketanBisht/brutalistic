@@ -33,7 +33,7 @@ export function ProgressDoc() {
           </div>
         </Preview>
         <CodeBlock
-          code={`import { Progress } from 'brutalistic'
+          code={`import { Progress } from '@k10_here/brutalistic'
 
 export default function App() {
   return <Progress value={66} variant="yellow" />

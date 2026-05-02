@@ -28,7 +28,7 @@ export function BadgeDoc() {
           </div>
         </Preview>
         <CodeBlock
-          code={`import { Badge } from 'brutalistic'
+          code={`import { Badge } from '@k10_here/brutalistic'
 
 export default function App() {
   return (

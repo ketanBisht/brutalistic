@@ -15,7 +15,7 @@ export function Installation() {
       <div className="space-y-6">
         <h2 className="text-2xl font-bold text-nb-black">1. Install the package</h2>
         <p className="text-gray-600">Run the following command to add the library to your project dependencies:</p>
-        <CodeBlock code="npm install brutalistic" />
+        <CodeBlock code="npm install @k10_here/brutalistic" />
       </div>
 
       <div className="space-y-6">
@@ -23,7 +23,7 @@ export function Installation() {
         <p className="text-gray-600">
           Brutalistic is built with the new Tailwind v4 <code>@theme</code> directive. You just need to import our CSS file in your main entry point (e.g. <code>main.tsx</code> or <code>App.tsx</code>):
         </p>
-        <CodeBlock code="import 'brutalistic/dist/style.css';" />
+        <CodeBlock code="import '@k10_here/brutalistic/dist/brutalistic.css';" />
         <div className="mt-4 p-4 border-[2.5px] border-nb-black bg-[#f5e642]/10 flex items-start gap-3">
           <Badge variant="yellow" shadow size="sm">Note</Badge>
           <p className="text-sm text-gray-700">
@@ -41,7 +41,7 @@ export function Installation() {
           </button>
         </Preview>
         <CodeBlock
-          code={`import { Button } from 'brutalistic'
+          code={`import { Button } from '@k10_here/brutalistic'
 
 function App() {
   return (

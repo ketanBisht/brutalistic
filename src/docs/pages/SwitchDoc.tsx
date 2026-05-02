@@ -29,7 +29,7 @@ export function SwitchDoc() {
         </Preview>
         <CodeBlock
           code={`import { useState } from 'react'
-import { Switch } from 'brutalistic'
+import { Switch } from '@k10_here/brutalistic'
 
 export default function App() {
   const [enabled, setEnabled] = useState(false)

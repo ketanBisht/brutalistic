@@ -38,8 +38,8 @@ export function CardDoc() {
           </div>
         </Preview>
         <CodeBlock
-          code={`import { Card, CardHeader, CardBody, CardFooter } from 'brutalistic'
-import { Button, Badge } from 'brutalistic'
+          code={`import { Card, CardHeader, CardBody, CardFooter } from '@k10_here/brutalistic'
+import { Button, Badge } from '@k10_here/brutalistic'
 
 export default function App() {
   return (
