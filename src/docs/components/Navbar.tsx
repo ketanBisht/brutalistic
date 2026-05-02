@@ -10,7 +10,7 @@ export function Navbar() {
           <span className="text-nb-yellow font-black text-sm leading-none">B</span>
         </div>
         <span className="font-black text-lg tracking-tight text-nb-black">brutalistic</span>
-        <Badge variant="black" size="sm" shadow>v0.1.0</Badge>
+        <Badge variant="black" size="sm" shadow>v0.1.1</Badge>
       </Link>
       <div className="flex items-center gap-3">
         <a href="https://github.com/ketanBisht/brutalistic" target="_blank" rel="noreferrer">
@@ -18,7 +18,7 @@ export function Navbar() {
             GitHub
           </Button>
         </a>
-        <a href="https://npmjs.com" target="_blank" rel="noreferrer">
+        <a href="https://www.npmjs.com/package/@k10_here/brutalistic" target="_blank" rel="noreferrer">
           <Button variant="ghost" size="sm" className="font-bold">
             npm
           </Button>

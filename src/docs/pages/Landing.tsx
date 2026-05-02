@@ -74,6 +74,9 @@ export function Landing() {
             <Link to="/docs/components/button">
               <Button variant="outline" size="lg">Browse Components</Button>
             </Link>
+            <a href="https://www.npmjs.com/package/@k10_here/brutalistic" target="_blank" rel="noreferrer">
+              <Button variant="secondary" size="lg">NPM Package ↗</Button>
+            </a>
           </div>
           <button
             onClick={handleCopy}
