@@ -1,3 +1,5 @@
+import './index.css'
+
 // Components
 export { Button } from './components/Button'
 export type { ButtonProps } from './components/Button'
@@ -14,6 +16,11 @@ export type { BadgeProps } from './components/Badge'
 export { Modal } from './components/Modal'
 
 export { Accordion } from './components/Accordion'
+
+export { Progress } from './components/Progress'
+export { Alert, AlertTitle, AlertDescription } from './components/Alert'
+export { Switch } from './components/Switch'
+export { Avatar } from './components/Avatar'
 
 // Utils
 export { cn } from './utils/cn'
