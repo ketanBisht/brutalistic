@@ -1,73 +1,117 @@
-# React + TypeScript + Vite
+# Brutalistic 🟨⬛️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![npm version](https://badge.fury.io/js/@k10_here%2Fbrutalistic.svg)](https://www.npmjs.com/package/@k10_here/brutalistic)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Currently, two official plugins are available:
+**Brutalistic** is a highly opinionated, unapologetic Neobrutalist UI component library for React. Built with **Tailwind CSS v4**, it features hard lines, high-contrast colors, harsh offset shadows, and absolutely zero border radius. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+If you want your web app to stand out with a bold, modern, and brutal aesthetic, this is the library for you.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🏗️ **Ready-to-use React Components**: Buttons, Inputs, Modals, Accordions, and more.
+- 🎨 **Strict Neobrutalist Aesthetic**: Thick 2.5px borders, solid offset shadows, and high-contrast color palettes (Yellow/Black/White).
+- ⚡️ **Built on Tailwind CSS v4**: Lightweight and highly compatible with modern tooling.
+- 🦾 **TypeScript Ready**: First-class TS support with exported types.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Installation
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Install the package via npm, yarn, or pnpm:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install @k10_here/brutalistic
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Peer Dependencies
+Ensure you have `react`, `react-dom`, and `react-router-dom` installed in your project, as well as `lucide-react` for the icons.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Setup
+
+To apply the required styles, you must import the CSS file at the root of your application (usually in your `main.tsx` or `App.tsx`):
+
+```tsx
+// main.tsx
+import '@k10_here/brutalistic/dist/brutalistic.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+);
 ```
+
+---
+
+## Usage
+
+Import and use the components in your React files:
+
+```tsx
+import { Button, Card, CardHeader, CardBody, CardFooter } from '@k10_here/brutalistic';
+
+function App() {
+  return (
+    <div className="p-8">
+      <Card className="max-w-md mx-auto">
+        <CardHeader>
+          <h2 className="text-2xl font-black">Join the Brutalist Movement</h2>
+        </CardHeader>
+        <CardBody>
+          <p className="text-gray-700">
+            Stop making things soft and rounded. Embrace the hard edges.
+          </p>
+        </CardBody>
+        <CardFooter className="flex justify-end gap-4">
+          <Button variant="neutral">Cancel</Button>
+          <Button variant="yellow">Get Started</Button>
+        </CardFooter>
+      </Card>
+    </div>
+  );
+}
+
+export default App;
+```
+
+---
+
+## Available Components
+
+- `Accordion`
+- `Alert`
+- `Avatar`
+- `Badge`
+- `Button`
+- `Card`
+- `Checkbox`
+- `Input` / `Textarea`
+- `Modal`
+- `Progress`
+- `Switch`
+
+*More components coming soon!*
+
+---
+
+## Customization
+
+Brutalistic is built using Tailwind CSS. While the components are designed to look perfect out of the box, you can override any styling by passing a standard `className` prop to any component. 
+
+```tsx
+<Button className="bg-blue-400 hover:bg-blue-500">
+  Custom Blue Button
+</Button>
+```
+
+---
+
+## License
+
+MIT © Ketan Bisht (@k10_here)

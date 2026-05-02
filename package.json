@@ -1,6 +1,6 @@
 {
-  "name": "brutalistic",
-  "version": "0.1.0",
+  "name": "@k10_here/brutalistic",
+  "version": "0.1.1",
   "type": "module",
   "main": "./dist/brutalistic.cjs.js",
   "module": "./dist/brutalistic.es.js",
