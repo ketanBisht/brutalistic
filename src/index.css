@@ -1,0 +1,61 @@
+/* ─── Google Fonts must be first ─── */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  /* ─── Neobrutalist Color Palette ─── */
+  --color-nb-black: #0d0d0d;
+  --color-nb-white: #fafaf7;
+  --color-nb-yellow: #f5e642;
+  --color-nb-pink: #ff6b9d;
+  --color-nb-blue: #3b82ff;
+  --color-nb-green: #22c55e;
+  --color-nb-orange: #ff7043;
+  --color-nb-purple: #a855f7;
+  --color-nb-red: #ef4444;
+  --color-nb-gray: #e5e7eb;
+
+  /* ─── Shadow — neobrutalist hard offset box-shadow ─── */
+  --shadow-brutal-sm: 3px 3px 0px 0px #0d0d0d;
+  --shadow-brutal:    5px 5px 0px 0px #0d0d0d;
+  --shadow-brutal-lg: 8px 8px 0px 0px #0d0d0d;
+  --shadow-brutal-xl: 12px 12px 0px 0px #0d0d0d;
+
+  /* ─── Typography ─── */
+  --font-sans: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+  /* ─── Animation ─── */
+  --animate-pop-in: pop-in 0.15s ease-out;
+}
+
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ─── Global Reset & Base ─── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-nb-white);
+  font-family: var(--font-sans);
+  color: var(--color-nb-black);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--color-nb-gray); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-nb-black);
+  border: 2px solid var(--color-nb-gray);
+}
