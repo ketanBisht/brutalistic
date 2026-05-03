@@ -1,3 +1,5 @@
+"use client"
+
 import { cn } from '../utils/cn'
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {

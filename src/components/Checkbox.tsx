@@ -1,3 +1,5 @@
+"use client"
+
 import { cn } from '../utils/cn'
 
 interface CheckboxProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'type'> {
