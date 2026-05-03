@@ -3,24 +3,46 @@
 
 @import "tailwindcss";
 
+:root {
+  /* ─── Light Mode Base Colors ─── */
+  --base-bg: #fafaf7;
+  --base-fg: #0d0d0d;
+  --base-yellow: #f5e642;
+  --base-pink: #ff6b9d;
+  --base-blue: #3b82ff;
+  --base-green: #22c55e;
+  --base-orange: #ff7043;
+  --base-purple: #a855f7;
+  --base-red: #ef4444;
+  --base-gray: #e5e7eb;
+}
+
+.dark {
+  /* ─── Dark Mode Base Colors (Inverted) ─── */
+  --base-bg: #121212;
+  --base-fg: #fafaf7;
+  --base-gray: #2d2d2d;
+  /* Keep vibrant colors intact for high contrast */
+}
+
 @theme {
-  /* ─── Neobrutalist Color Palette ─── */
-  --color-nb-black: #0d0d0d;
-  --color-nb-white: #fafaf7;
-  --color-nb-yellow: #f5e642;
-  --color-nb-pink: #ff6b9d;
-  --color-nb-blue: #3b82ff;
-  --color-nb-green: #22c55e;
-  --color-nb-orange: #ff7043;
-  --color-nb-purple: #a855f7;
-  --color-nb-red: #ef4444;
-  --color-nb-gray: #e5e7eb;
+  /* ─── Neobrutalist Semantic Tokens ─── */
+  --color-nb-black: var(--base-fg);
+  --color-nb-white: var(--base-bg);
+  --color-nb-yellow: var(--base-yellow);
+  --color-nb-pink: var(--base-pink);
+  --color-nb-blue: var(--base-blue);
+  --color-nb-green: var(--base-green);
+  --color-nb-orange: var(--base-orange);
+  --color-nb-purple: var(--base-purple);
+  --color-nb-red: var(--base-red);
+  --color-nb-gray: var(--base-gray);
 
   /* ─── Shadow — neobrutalist hard offset box-shadow ─── */
-  --shadow-brutal-sm: 3px 3px 0px 0px #0d0d0d;
-  --shadow-brutal:    5px 5px 0px 0px #0d0d0d;
-  --shadow-brutal-lg: 8px 8px 0px 0px #0d0d0d;
-  --shadow-brutal-xl: 12px 12px 0px 0px #0d0d0d;
+  --shadow-brutal-sm: 3px 3px 0px 0px var(--base-fg);
+  --shadow-brutal:    5px 5px 0px 0px var(--base-fg);
+  --shadow-brutal-lg: 8px 8px 0px 0px var(--base-fg);
+  --shadow-brutal-xl: 12px 12px 0px 0px var(--base-fg);
 
   /* ─── Typography ─── */
   --font-sans: 'Space Grotesk', 'Inter', system-ui, sans-serif;

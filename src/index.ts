@@ -21,6 +21,12 @@ export { Progress } from './components/Progress'
 export { Alert, AlertTitle, AlertDescription } from './components/Alert'
 export { Switch } from './components/Switch'
 export { Avatar } from './components/Avatar'
+export { Tabs, TabsList, TabsTrigger, TabsContent } from './components/Tabs'
+export { Tooltip } from './components/Tooltip'
+export { Breadcrumb, BreadcrumbItem } from './components/Breadcrumb'
+
+// Providers
+export { ThemeProvider, useTheme } from './components/ThemeProvider'
 
 // Utils
 export { cn } from './utils/cn'

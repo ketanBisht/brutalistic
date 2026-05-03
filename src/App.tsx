@@ -15,6 +15,9 @@ import { ProgressDoc } from './docs/pages/ProgressDoc'
 import { AlertDoc } from './docs/pages/AlertDoc'
 import { SwitchDoc } from './docs/pages/SwitchDoc'
 import { AvatarDoc } from './docs/pages/AvatarDoc'
+import { TabsDoc } from './docs/pages/TabsDoc'
+import { TooltipDoc } from './docs/pages/TooltipDoc'
+import { BreadcrumbDoc } from './docs/pages/BreadcrumbDoc'
 
 function App() {
   return (
@@ -29,6 +32,7 @@ function App() {
           <Route path="docs/components/alert" element={<AlertDoc />} />
           <Route path="docs/components/avatar" element={<AvatarDoc />} />
           <Route path="docs/components/badge" element={<BadgeDoc />} />
+          <Route path="docs/components/breadcrumb" element={<BreadcrumbDoc />} />
           <Route path="docs/components/button" element={<ButtonDoc />} />
           <Route path="docs/components/card" element={<CardDoc />} />
           <Route path="docs/components/checkbox" element={<CheckboxDoc />} />
@@ -36,6 +40,8 @@ function App() {
           <Route path="docs/components/modal" element={<ModalDoc />} />
           <Route path="docs/components/progress" element={<ProgressDoc />} />
           <Route path="docs/components/switch" element={<SwitchDoc />} />
+          <Route path="docs/components/tabs" element={<TabsDoc />} />
+          <Route path="docs/components/tooltip" element={<TooltipDoc />} />
           
           {/* Redirects */}
           <Route path="*" element={<Navigate to="/" replace />} />

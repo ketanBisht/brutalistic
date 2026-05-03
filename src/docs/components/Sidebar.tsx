@@ -15,6 +15,7 @@ const LINKS = [
       { name: 'Alert', path: '/docs/components/alert' },
       { name: 'Avatar', path: '/docs/components/avatar' },
       { name: 'Badge', path: '/docs/components/badge' },
+      { name: 'Breadcrumb', path: '/docs/components/breadcrumb' },
       { name: 'Button', path: '/docs/components/button' },
       { name: 'Card', path: '/docs/components/card' },
       { name: 'Checkbox', path: '/docs/components/checkbox' },
@@ -22,6 +23,8 @@ const LINKS = [
       { name: 'Modal', path: '/docs/components/modal' },
       { name: 'Progress', path: '/docs/components/progress' },
       { name: 'Switch', path: '/docs/components/switch' },
+      { name: 'Tabs', path: '/docs/components/tabs' },
+      { name: 'Tooltip', path: '/docs/components/tooltip' },
     ],
   },
 ]
