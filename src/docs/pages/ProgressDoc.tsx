@@ -16,7 +16,7 @@ export function ProgressDoc() {
     <div className="space-y-12">
       <div className="space-y-4">
         <h1 className="text-5xl font-black text-nb-black tracking-tight">Progress</h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-nb-black opacity-70">
           A thick, highly visible progress bar for displaying loading states or completion.
         </p>
       </div>
@@ -43,7 +43,7 @@ export default function App() {
 
       <div className="space-y-6">
         <h2 className="text-2xl font-bold text-nb-black">Indeterminate (Loading)</h2>
-        <p className="text-gray-600">Use the <code>indeterminate</code> prop for ongoing loading states. It automatically animates diagonal stripes.</p>
+        <p className="text-nb-black opacity-70">Use the <code>indeterminate</code> prop for ongoing loading states. It automatically animates diagonal stripes.</p>
         <Preview>
           <div className="w-full max-w-md mx-auto space-y-6">
             <Progress indeterminate variant="blue" />

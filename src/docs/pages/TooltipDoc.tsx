@@ -8,7 +8,7 @@ export function TooltipDoc() {
     <div className="space-y-12">
       <div className="space-y-4">
         <h1 className="text-4xl font-black text-nb-black tracking-tight">Tooltip</h1>
-        <p className="text-lg text-gray-600">A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.</p>
+        <p className="text-lg text-nb-black opacity-70">A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.</p>
       </div>
 
       <div className="space-y-6">

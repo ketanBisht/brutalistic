@@ -6,13 +6,13 @@ const badgeVariants = cva(
   {
     variants: {
       variant: {
-        yellow:  'bg-nb-yellow text-nb-black',
-        pink:    'bg-nb-pink text-nb-black',
-        blue:    'bg-nb-blue text-nb-white',
-        green:   'bg-nb-green text-nb-black',
-        orange:  'bg-nb-orange text-nb-white',
-        purple:  'bg-nb-purple text-nb-white',
-        red:     'bg-nb-red text-nb-white',
+        yellow:  'bg-nb-yellow text-[#0d0d0d] border-[#0d0d0d]',
+        pink:    'bg-nb-pink text-[#0d0d0d] border-[#0d0d0d]',
+        blue:    'bg-nb-blue text-[#0d0d0d] border-[#0d0d0d]',
+        green:   'bg-nb-green text-[#0d0d0d] border-[#0d0d0d]',
+        orange:  'bg-nb-orange text-[#0d0d0d] border-[#0d0d0d]',
+        purple:  'bg-nb-purple text-[#0d0d0d] border-[#0d0d0d]',
+        red:     'bg-nb-red text-[#0d0d0d] border-[#0d0d0d]',
         black:   'bg-nb-black text-nb-white',
         outline: 'bg-nb-white text-nb-black',
       },

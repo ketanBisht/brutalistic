@@ -11,7 +11,7 @@ export function ModalDoc() {
     <div className="space-y-12">
       <div className="space-y-4">
         <h1 className="text-5xl font-black text-nb-black tracking-tight">Modal / Dialog</h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-nb-black opacity-70">
           Accessible dialog overlay with backdrop blur, scroll lock, and custom pop-in animation.
         </p>
       </div>
@@ -32,7 +32,7 @@ export function ModalDoc() {
               </>
             }
           >
-            <p className="text-sm text-gray-700 leading-relaxed">
+            <p className="text-sm text-nb-black opacity-80 leading-relaxed">
               Are you sure you want to delete this item? This action cannot be undone.
             </p>
           </Modal>
@@ -59,7 +59,7 @@ export default function App() {
           </>
         }
       >
-        <p className="text-sm text-gray-700">
+        <p className="text-sm text-nb-black opacity-80">
           Are you sure you want to delete this item?
         </p>
       </Modal>

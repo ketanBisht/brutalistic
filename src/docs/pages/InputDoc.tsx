@@ -7,7 +7,7 @@ export function InputDoc() {
     <div className="space-y-12">
       <div className="space-y-4">
         <h1 className="text-5xl font-black text-nb-black tracking-tight">Input & Textarea</h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-nb-black opacity-70">
           Form fields with strong boundaries and a signature inset shadow on focus.
         </p>
       </div>

@@ -7,7 +7,7 @@ export function BreadcrumbDoc() {
     <div className="space-y-12">
       <div className="space-y-4">
         <h1 className="text-4xl font-black text-nb-black tracking-tight">Breadcrumb</h1>
-        <p className="text-lg text-gray-600">Displays the path to the current resource using a hierarchy of links.</p>
+        <p className="text-lg text-nb-black opacity-70">Displays the path to the current resource using a hierarchy of links.</p>
       </div>
 
       <div className="space-y-6">

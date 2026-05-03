@@ -8,7 +8,7 @@ export function AlertDoc() {
     <div className="space-y-12">
       <div className="space-y-4">
         <h1 className="text-5xl font-black text-nb-black tracking-tight">Alert</h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-nb-black opacity-70">
           A high-contrast callout box for success, error, and informational messages.
         </p>
       </div>

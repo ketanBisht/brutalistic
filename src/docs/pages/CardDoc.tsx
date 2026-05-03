@@ -9,14 +9,14 @@ export function CardDoc() {
     <div className="space-y-12">
       <div className="space-y-4">
         <h1 className="text-5xl font-black text-nb-black tracking-tight">Card</h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-nb-black opacity-70">
           Structured content containers with optional color accent headers.
         </p>
       </div>
 
       <div className="space-y-6">
         <h2 className="text-2xl font-bold text-nb-black">Usage</h2>
-        <p className="text-gray-600">Cards are composed of Header, Body, and Footer sub-components.</p>
+        <p className="text-nb-black opacity-70">Cards are composed of Header, Body, and Footer sub-components.</p>
         <Preview>
           <div className="w-full max-w-sm mx-auto">
             <Card accent="yellow">
@@ -27,7 +27,7 @@ export function CardDoc() {
                 </div>
               </CardHeader>
               <CardBody>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-nb-black opacity-70 leading-relaxed">
                   This is a Card with a yellow top accent border. Use cards to group related content.
                 </p>
               </CardBody>
@@ -51,7 +51,7 @@ export default function App() {
         </div>
       </CardHeader>
       <CardBody>
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-nb-black opacity-70">
           Use cards to group related content in a clear container.
         </p>
       </CardBody>
@@ -66,7 +66,7 @@ export default function App() {
 
       <div className="space-y-6">
         <h2 className="text-2xl font-bold text-nb-black">Accents</h2>
-        <p className="text-gray-600">Cards can have different colored top borders to indicate context or categories.</p>
+        <p className="text-nb-black opacity-70">Cards can have different colored top borders to indicate context or categories.</p>
         <Preview className="flex-col gap-6 items-stretch">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
             {(['pink', 'blue'] as const).map((accent) => (
@@ -75,7 +75,7 @@ export default function App() {
                   <span className="font-bold text-nb-black capitalize">{accent} Accent</span>
                 </CardHeader>
                 <CardBody>
-                  <p className="text-sm text-gray-600">Accent colors map to the design tokens.</p>
+                  <p className="text-sm text-nb-black opacity-70">Accent colors map to the design tokens.</p>
                 </CardBody>
               </Card>
             ))}

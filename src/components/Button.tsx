@@ -8,7 +8,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          'bg-nb-yellow text-nb-black shadow-brutal hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-brutal-sm',
+          'bg-nb-yellow text-[#0d0d0d] shadow-[5px_5px_0px_0px_#0d0d0d] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_0px_#0d0d0d] border-[2.5px] border-[#0d0d0d]',
         secondary:
           'bg-nb-black text-nb-white shadow-brutal hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-brutal-sm',
         outline:
@@ -16,9 +16,9 @@ const buttonVariants = cva(
         ghost:
           'bg-transparent border-transparent shadow-none text-nb-black hover:bg-nb-gray hover:border-nb-black',
         danger:
-          'bg-nb-red text-nb-white shadow-brutal hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-brutal-sm',
+          'bg-nb-red text-[#0d0d0d] shadow-[5px_5px_0px_0px_#0d0d0d] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_0px_#0d0d0d] border-[2.5px] border-[#0d0d0d]',
         success:
-          'bg-nb-green text-nb-black shadow-brutal hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-brutal-sm',
+          'bg-nb-green text-[#0d0d0d] shadow-[5px_5px_0px_0px_#0d0d0d] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0px_0px_#0d0d0d] border-[2.5px] border-[#0d0d0d]',
       },
       size: {
         sm: 'px-3 py-1.5 text-xs',

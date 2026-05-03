@@ -52,7 +52,7 @@ export function Switch({ className, label, description, id, disabled, ...props }
             </label>
           )}
           {description && (
-            <p className={cn('text-xs text-gray-500', disabled && 'opacity-50')}>
+            <p className={cn('text-xs text-nb-black opacity-60', disabled && 'opacity-50')}>
               {description}
             </p>
           )}

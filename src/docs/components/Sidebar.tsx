@@ -47,8 +47,8 @@ export function Sidebar() {
                     cn(
                       'px-3 py-2 text-sm font-semibold transition-colors duration-100',
                       isActive
-                        ? 'bg-nb-yellow border-[2.5px] border-nb-black shadow-brutal-sm translate-x-[-2px] translate-y-[-2px]'
-                        : 'text-gray-600 hover:text-nb-black hover:bg-nb-gray'
+                        ? 'bg-nb-yellow text-[#0d0d0d] border-[2.5px] border-[#0d0d0d] shadow-[3px_3px_0px_0px_#0d0d0d] translate-x-[-2px] translate-y-[-2px]'
+                        : 'text-nb-black opacity-70 hover:text-nb-black hover:bg-nb-gray'
                     )
                   }
                 >

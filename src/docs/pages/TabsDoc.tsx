@@ -7,7 +7,7 @@ export function TabsDoc() {
     <div className="space-y-12">
       <div className="space-y-4">
         <h1 className="text-4xl font-black text-nb-black tracking-tight">Tabs</h1>
-        <p className="text-lg text-gray-600">A set of layered sections of content—known as tab panels—that are displayed one at a time.</p>
+        <p className="text-lg text-nb-black opacity-70">A set of layered sections of content—known as tab panels—that are displayed one at a time.</p>
       </div>
 
       <div className="space-y-6">

@@ -7,14 +7,14 @@ export function ButtonDoc() {
     <div className="space-y-12">
       <div className="space-y-4">
         <h1 className="text-5xl font-black text-nb-black tracking-tight">Button</h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-nb-black opacity-70">
           The primary interactive element, featuring bold borders and hard shadows that compress on click.
         </p>
       </div>
 
       <div className="space-y-6">
         <h2 className="text-2xl font-bold text-nb-black">Variants</h2>
-        <p className="text-gray-600">Six bold variants to fit any neobrutalist layout.</p>
+        <p className="text-nb-black opacity-70">Six bold variants to fit any neobrutalist layout.</p>
         <Preview className="flex-col gap-6">
           <div className="flex flex-wrap gap-4 justify-center">
             <Button variant="primary">Primary</Button>

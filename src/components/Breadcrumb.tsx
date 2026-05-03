@@ -15,7 +15,7 @@ export function Breadcrumb({ className, separator = '/', children, ...props }: B
           <li key={index} className="flex items-center gap-2">
             {child}
             {index < items.length - 1 && (
-              <span className="text-nb-black/50 select-none mx-1" aria-hidden="true">
+              <span className="text-nb-black opacity-50 select-none mx-1" aria-hidden="true">
                 {separator}
               </span>
             )}
@@ -35,7 +35,7 @@ export function BreadcrumbItem({ className, active, children, ...props }: Breadc
     <a
       className={cn(
         'inline-flex items-center hover:text-nb-blue focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-nb-black focus-visible:ring-offset-2 transition-colors',
-        active ? 'text-nb-black bg-nb-yellow px-2 py-0.5 border-[2.5px] border-nb-black shadow-brutal-sm' : 'text-nb-black/70 hover:bg-nb-gray px-2 py-0.5',
+        active ? 'text-[#0d0d0d] bg-nb-yellow px-2 py-0.5 border-[2.5px] border-[#0d0d0d] shadow-[3px_3px_0px_0px_#0d0d0d]' : 'text-nb-black opacity-70 hover:bg-nb-gray px-2 py-0.5',
         className
       )}
       aria-current={active ? 'page' : undefined}

@@ -40,8 +40,8 @@ export function Accordion({ items, allowMultiple = false, defaultOpen = [], clas
               onClick={() => toggle(item.id)}
               className={cn(
                 'w-full flex items-center justify-between px-5 py-4 text-left font-semibold text-sm text-nb-black',
-                'hover:bg-nb-yellow transition-colors duration-100',
-                isOpen && 'bg-nb-yellow',
+                'hover:bg-nb-yellow hover:text-[#0d0d0d] transition-colors duration-100',
+                isOpen && 'bg-nb-yellow text-[#0d0d0d]',
                 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-nb-black'
               )}
             >
@@ -73,7 +73,7 @@ export function Accordion({ items, allowMultiple = false, defaultOpen = [], clas
                 isOpen ? 'max-h-[500px] border-t-[2.5px] border-nb-black' : 'max-h-0'
               )}
             >
-              <div className="px-5 py-4 text-sm text-gray-700 bg-nb-white">
+              <div className="px-5 py-4 text-sm text-nb-black opacity-80 bg-nb-white">
                 {item.content}
               </div>
             </div>

@@ -63,7 +63,7 @@ export function Landing() {
               <span className="absolute -bottom-1 left-0 right-0 h-4 bg-nb-yellow z-0" />
             </span>
           </h1>
-          <p className="text-lg text-gray-600 max-w-xl leading-relaxed">
+          <p className="text-lg text-nb-black opacity-70 max-w-xl leading-relaxed">
             A raw, high-contrast React component library built on the neobrutalist design philosophy.
             Bold borders, hard shadows, zero compromise.
           </p>
@@ -80,7 +80,7 @@ export function Landing() {
           </div>
           <button
             onClick={handleCopy}
-            className="font-mono text-sm bg-nb-black text-nb-yellow px-4 py-2 border-[2.5px] border-nb-black shadow-brutal-sm cursor-pointer hover:bg-gray-900 active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all flex items-center gap-2 mt-4"
+            className="font-mono text-sm bg-[#0d0d0d] text-nb-yellow px-4 py-2 border-[2.5px] border-[#0d0d0d] shadow-[3px_3px_0px_0px_#0d0d0d] cursor-pointer hover:bg-black active:translate-x-[3px] active:translate-y-[3px] active:shadow-none transition-all flex items-center gap-2 mt-4"
           >
             npm install @k10_here/brutalistic
             {copied ? <Check size={16} /> : <Copy size={16} />}
@@ -93,7 +93,7 @@ export function Landing() {
         <div className="mb-8 text-center">
           <Badge variant="outline" size="sm" className="mb-3">Why</Badge>
           <h2 className="text-3xl font-black text-nb-black mb-2 tracking-tight">Why Brutalistic?</h2>
-          <p className="text-gray-500 text-sm">A design philosophy for people who believe software should have character.</p>
+          <p className="text-nb-black opacity-60 text-sm">A design philosophy for people who believe software should have character.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature) => (
@@ -105,7 +105,7 @@ export function Landing() {
                 {feature.icon}
               </div>
               <h3 className="font-bold text-base text-nb-black mb-2">{feature.title}</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">{feature.description}</p>
+              <p className="text-sm text-nb-black opacity-70 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

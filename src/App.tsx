@@ -15,9 +15,9 @@ import { ProgressDoc } from './docs/pages/ProgressDoc'
 import { AlertDoc } from './docs/pages/AlertDoc'
 import { SwitchDoc } from './docs/pages/SwitchDoc'
 import { AvatarDoc } from './docs/pages/AvatarDoc'
-import { TabsDoc } from './docs/pages/TabsDoc'
-import { TooltipDoc } from './docs/pages/TooltipDoc'
-import { BreadcrumbDoc } from './docs/pages/BreadcrumbDoc'
+import { TabsDoc } from './docs/pages/TabsDoc.tsx'
+import { TooltipDoc } from './docs/pages/TooltipDoc.tsx'
+import { BreadcrumbDoc } from './docs/pages/BreadcrumbDoc.tsx'
 
 function App() {
   return (

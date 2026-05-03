@@ -19,7 +19,7 @@ export function Input({ label, error, hint, className, id, ...props }: InputProp
         id={inputId}
         className={cn(
           'w-full px-4 py-2.5 border-[2.5px] border-nb-black bg-nb-white font-sans text-sm',
-          'placeholder:text-gray-400',
+          'placeholder:text-nb-black placeholder:opacity-50',
           'focus:outline-none focus:shadow-brutal focus:translate-x-[-2px] focus:translate-y-[-2px]',
           'transition-all duration-100',
           error && 'border-nb-red focus:shadow-[5px_5px_0px_0px_#ef4444]',
@@ -27,7 +27,7 @@ export function Input({ label, error, hint, className, id, ...props }: InputProp
         )}
         {...props}
       />
-      {hint && !error && <p className="text-xs text-gray-500">{hint}</p>}
+      {hint && !error && <p className="text-xs text-nb-black opacity-60">{hint}</p>}
       {error && <p className="text-xs text-nb-red font-medium">{error}</p>}
     </div>
   )
@@ -53,7 +53,7 @@ export function Textarea({ label, error, hint, className, id, ...props }: Textar
         rows={4}
         className={cn(
           'w-full px-4 py-2.5 border-[2.5px] border-nb-black bg-nb-white font-sans text-sm resize-y',
-          'placeholder:text-gray-400',
+          'placeholder:text-nb-black placeholder:opacity-50',
           'focus:outline-none focus:shadow-brutal focus:translate-x-[-2px] focus:translate-y-[-2px]',
           'transition-all duration-100',
           error && 'border-nb-red focus:shadow-[5px_5px_0px_0px_#ef4444]',
@@ -61,7 +61,7 @@ export function Textarea({ label, error, hint, className, id, ...props }: Textar
         )}
         {...props}
       />
-      {hint && !error && <p className="text-xs text-gray-500">{hint}</p>}
+      {hint && !error && <p className="text-xs text-nb-black opacity-60">{hint}</p>}
       {error && <p className="text-xs text-nb-red font-medium">{error}</p>}
     </div>
   )

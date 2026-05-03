@@ -8,10 +8,10 @@ const alertVariants = cva(
     variants: {
       variant: {
         default: 'bg-nb-white shadow-brutal-sm',
-        info: 'bg-nb-blue shadow-brutal-sm',
-        success: 'bg-nb-green shadow-brutal-sm',
-        warning: 'bg-nb-yellow shadow-brutal-sm',
-        error: 'bg-nb-red shadow-brutal-sm',
+        info: 'bg-nb-blue border-[#0d0d0d] shadow-[3px_3px_0px_0px_#0d0d0d]',
+        success: 'bg-nb-green border-[#0d0d0d] shadow-[3px_3px_0px_0px_#0d0d0d]',
+        warning: 'bg-nb-yellow border-[#0d0d0d] shadow-[3px_3px_0px_0px_#0d0d0d]',
+        error: 'bg-nb-red border-[#0d0d0d] shadow-[3px_3px_0px_0px_#0d0d0d]',
       },
     },
     defaultVariants: {
@@ -27,14 +27,17 @@ export interface AlertProps
 }
 
 export function Alert({ className, variant, icon, children, ...props }: AlertProps) {
+  const isVibrant = variant !== 'default'
+  const textColorClass = isVibrant ? 'text-[#0d0d0d]' : 'text-nb-black'
+
   return (
     <div
       role="alert"
       className={cn(alertVariants({ variant }), className)}
       {...props}
     >
-      {icon && <div className="shrink-0 text-nb-black mt-0.5">{icon}</div>}
-      <div className="flex flex-col gap-1 w-full text-nb-black">{children}</div>
+      {icon && <div className={cn("shrink-0 mt-0.5", textColorClass)}>{icon}</div>}
+      <div className={cn("flex flex-col gap-1 w-full", textColorClass)}>{children}</div>
     </div>
   )
 }

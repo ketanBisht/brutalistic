@@ -28,7 +28,7 @@ export function Checkbox({ label, description, className, id, ...props }: Checkb
           className={cn(
             'w-5 h-5 border-[2.5px] border-nb-black bg-nb-white',
             'transition-all duration-100',
-            'peer-checked:bg-nb-yellow',
+            'peer-checked:bg-nb-yellow peer-checked:text-[#0d0d0d]',
             'peer-focus-visible:shadow-brutal-sm',
             'group-hover:shadow-brutal-sm',
           )}
@@ -49,7 +49,7 @@ export function Checkbox({ label, description, className, id, ...props }: Checkb
       <div className="flex flex-col">
         <span className="text-sm font-semibold text-nb-black leading-5">{label}</span>
         {description && (
-          <span className="text-xs text-gray-500 mt-0.5">{description}</span>
+          <span className="text-xs text-nb-black opacity-60 mt-0.5">{description}</span>
         )}
       </div>
     </label>

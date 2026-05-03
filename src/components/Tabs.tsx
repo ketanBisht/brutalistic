@@ -56,7 +56,7 @@ export function TabsTrigger({ value, className, children, ...props }: TabsTrigge
       className={cn(
         'px-4 py-2 font-bold text-sm border-[2.5px] border-nb-black transition-all duration-100 cursor-pointer',
         isActive
-          ? 'bg-nb-yellow text-nb-black shadow-brutal translate-x-[-2px] translate-y-[-2px]'
+          ? 'bg-nb-yellow text-[#0d0d0d] shadow-[3px_3px_0px_0px_#0d0d0d] border-[#0d0d0d] translate-x-[-2px] translate-y-[-2px]'
           : 'bg-nb-white text-nb-black hover:bg-nb-gray shadow-none translate-x-[0px] translate-y-[0px]',
         className
       )}

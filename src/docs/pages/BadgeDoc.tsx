@@ -7,7 +7,7 @@ export function BadgeDoc() {
     <div className="space-y-12">
       <div className="space-y-4">
         <h1 className="text-5xl font-black text-nb-black tracking-tight">Badge</h1>
-        <p className="text-lg text-gray-600">
+        <p className="text-lg text-nb-black opacity-70">
           Small status indicators, category tags, and version labels in 9 striking colors.
         </p>
       </div>

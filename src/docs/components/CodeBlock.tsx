@@ -22,7 +22,7 @@ export function CodeBlock({ code, className }: { code: string; className?: strin
           {copied ? <Check size={16} /> : <Copy size={16} />}
         </button>
       </div>
-      <pre className="p-6 bg-nb-black text-nb-white border-[2.5px] border-nb-black overflow-x-auto text-sm font-mono leading-relaxed">
+      <pre className="p-6 bg-[#0d0d0d] text-[#fafaf7] border-[2.5px] border-nb-black overflow-x-auto text-sm font-mono leading-relaxed">
         <code>{code}</code>
       </pre>
     </div>
